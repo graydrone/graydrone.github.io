@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>투자 메이트</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="im_price style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="havecal.js"></script>
+  <meta name="keywords" content="주식투자, 매매일지, 평단가계산">
+  <meta name="description" content="주식 투자에 유용한 툴을 제공하는 사이트">
+  <meta name="robots" content="index,follow">
+<!-- //오픈그래프 -->
+  <meta property="og:title" content="투자 메이트" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="주식 투자에 유용한 툴을 제공하는 사이트" />
+  <meta property="og:url" content="https://웹사이트 주소/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/로고이미지.jpg" />
+ 
+  <!-- 파비콘 적용 -->
+<link rel="apple-touch-icon" sizes="57x57" href="image/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="image/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="image/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="image/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="image/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="image/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="image/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="image/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="image/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="image/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="image/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+<link rel="manifest" href="image/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="image/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+</head>
+<div class="wrap_intro">
+  <div class="hedder">
+    <div class="log">
+      <input type="text" placeholder="ID">
+      <input type="text" placeholder="PW">
+      <button>Log In</button>
+    </div>
+  <div class="title">
+    <h1>투자 메이트</h1>
+    <p>성공 투자를 위한 파트너</p>
+  </div>
+  </div>
+</div>
+<ul class="navi">
+  <li id="viewPage"><a href="#">평단가 계산기 </a></li>
+  <!-- <li><a href="#">매매일지 입력<br>(추후 업데이트) </a></li>
+  <li><a href="#">나의 매매일지<br>(추후 업데이트)</a></li> -->
+</ul>
+<form>
+  <div class="have_stock stall">보유 단가<br>
+    <input type="text" id="have_price" placeholder="보유 단가">
+    <input type="text" id="have_much" placeholder="보유 수량">
+    <input type="text" id="have_money" placeholder="보유 금액" disabled>
+    <button type="button" onclick="have_result()">입력</button>
+    </input>  
+  </div>
+  <div class="add_stock stall">추가 매수<br>
+    <input type="text" id="add_price" placeholder="추매 단가">
+    <input type="text" id="add_much" placeholder="추매 수량">
+    <input type="text" id="add_money" placeholder="추매 금액" disabled>
+    <button type="button" onclick="add_result()">입력</button>
+    </input>  
+  </div>
+  <div class="final_stock stall">최종 보유<br>
+    <input type="text" id="final_price" placeholder="최종 단가" disabled>
+    <input type="text" id="final_much" placeholder="최종 수량" disabled>
+    <input type="text" id="final_money" placeholder="최종 금액" disabled>
+    <button type="button" onclick="final_result()">결과</button>
+    </input>  
+  </div>
+</form>
+
+</div>
+
+<script dffer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
+
+</body>
+</html>
