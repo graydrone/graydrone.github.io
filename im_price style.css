@@ -64,7 +64,7 @@
 @media(max-width:375px){
   .wrap_intro {
     height: 307px;
-    width: 375px;
+    width: 100%;
     background-position-x: 66%;
   }
   .log {
@@ -142,7 +142,7 @@
 @media(max-width:375px){
   .navi{
     top: -12px;
-    width: 356px;
+    width: 380px;
     height: 66px;
     margin: 0px 0px 0px -11px
     
@@ -203,7 +203,7 @@
   [class*='stall']{
     height: 128px;
     line-height: 39px;
-    width: 352px;
+    width: 373px;
     margin-left: 0px;
   }
   [class*='stall'] > input{
